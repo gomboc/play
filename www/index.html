@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    	<title>heading.title</title>
+    	
+    	<link href="/css/utils.css" rel="stylesheet" type="text/css" />
+    	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="/css/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+		<link href="/css/content.css" rel="stylesheet" type="text/css" />
+		<link href="/css/header.css" rel="stylesheet" type="text/css" />
+		<link href="/css/footer.css" rel="stylesheet" type="text/css" />
+		<link href="/css/list.css" rel="stylesheet" type="text/css" />
+		<link href="/css/player.css" rel="stylesheet" type="text/css" />
+		<link href="/css/playlist.css" rel="stylesheet" type="text/css" />
+		<link href="/css/dialog.css" rel="stylesheet" type="text/css" />
+		
+		<script src="/js/jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
+		<script src="/js/jquery/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+		<script src="/js/jquery/mouse-wheel-horizontal-scroll.jquery.js" type="text/javascript"></script>
+		<script src="/js/swfobject/swfobject.js" type="text/javascript"></script>
+		<script src="/js/general/namespace.js" type="text/javascript"></script>
+		<script src="/js/general/utils.js" type="text/javascript"></script>
+		<script src="/js/default/dialog.js" type="text/javascript"></script>
+		<script src="/js/default/player/open.js" type="text/javascript"></script>
+		<script src="/js/default/player/volume.js" type="text/javascript"></script>
+		<script src="/js/default/player/playlist.js" type="text/javascript"></script>
+        <script src="/js/default/player.js" type="text/javascript"></script>
+        <script src="/js/default/layout.js" type="text/javascript"></script>
+        <script src="/js/default/app.js" type="text/javascript"></script>
+    	
+    </head>
+    <body>
+    
+    	<div id="wrapper">
+    	
+	    	<div id="header">
+	 			heading.title |
+			</div>
+			
+			<div id="content">
+	    
+		    	<div id="controlls">
+					<div class="data">
+						<ul>
+							<li></li>
+							<li class="time">00:00</li>
+							<li class="avatar">
+								<img src="/img/avatar.png" width="60" height="60" alt="" />
+							</li>
+							<li class="title"></li>
+							<li></li>
+						</ul>
+						<div class="brclear"></div>
+					</div>
+					<div class="bar">
+						<div class="seekSlider"></div>
+					</div>
+					<div class="buttons">
+						<ul>
+							<li>
+								<button class="controll prev borderRadius" title="Prev">
+									<img src="/img/prev.png" alt="prev" />
+								</button>
+							</li>
+							<li>
+								<button class="controll play borderRadius" title="Play">
+									<img src="/img/play.png" alt="play" />
+								</button>
+							</li>
+							<li>
+								<button class="controll pause borderRadius" title="Pause">
+									<img src="/img/pause.png" alt="pause" />
+								</button>
+							</li>
+							<li>
+								<button class="controll stop borderRadius" title="Stop">
+									<img src="/img/stop.png" alt="stop" />
+								</button>
+							</li>
+							<li>
+								<button class="controll next borderRadius" title="Next">
+									<img src="/img/next.png" alt="next" />
+								</button>
+							</li>
+							<li>
+								<button class="controll open borderRadius" title="Open">
+									<img src="/img/open.png" alt="open" />
+								</button>
+							</li>
+						</ul>
+						<div class="brclear"></div>
+					</div>
+					
+					<div id="video">
+						<div id="ytApiPlayer">
+							text.noFlashPlayer
+						</div>
+					</div>
+					
+					<div id="notice">
+						text.notice
+					</div>
+					
+				</div>
+				
+				<div id="playlist" class="list">
+					<ul></ul>
+				</div>
+				
+				<div class="brclear"></div>
+				
+				<div id="dialog" class="hide dialogBoxShadow borderRadius">
+					<div class="inner">
+						<a href="javascript:void(0);" class="close" title="label.close"></a>
+						<h2>heading.selectSong</h2>
+						<div class="navigation list">
+							<ul>
+								<li><a href="javascript:void(0)" class="active list">navigation.list</a></li>
+								<li><a href="javascript:void(0)" class="youtube">navigation.youtube</a></li>
+							</ul>
+						</div>
+						<div class="content list">
+							<div class="breadcrumbs listElement">
+								<span class="root"><?php echo $this->translate( 'Izvođači' ); ?></span>
+							</div>
+							<div class="contentWrapper listElement">
+								<div class="listContainer"></div>
+							</div>
+							<div class="youtubeElement hide">
+								<div>
+									<input type="text" id="youtubeQueue" class="borderRadius" />
+									<button id="youtubeSearch" class="borderRadius">label.search</button>
+								</div>
+								<div class="searchResults"></div>
+							</div>
+						</div>
+						<div class="brclear"></div>
+						<div class="buttons">
+							<ul>
+								<li><button class="add borderRadiu">button.add</button></li>
+								<li><button class="cancel borderRadius">button.cancel</button></li>
+							</ul>
+							<div class="brclear"></div>
+						</div>
+					</div>
+				</div>
+					
+			</div>											
+	
+			<div id="footer">
+				text.footer
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+		
+			jQuery( function() {
+			    swfobject.embedSWF(
+			   		"http://www.youtube.com/apiplayer?enablejsapi=1&version=3",
+					"ytApiPlayer", 
+					"640", 
+					"360", 
+					"8", 
+					null, 
+					null, 
+					{ allowScriptAccess: "always", wmode: "transparent" }, 
+					{ id: "ytPlayer" }, 
+					function() {} 
+				);
+			} );
+		</script>
+
+    </body>
+</html>

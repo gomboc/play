@@ -1,0 +1,82 @@
+/***** player *****/
+
+#video {
+	background-color: #000;
+}
+
+#controlls {
+	float: left;
+	width: 640px;
+}
+
+/*** data start ***/
+
+.data {
+	padding: 0 0 10px;
+}
+
+.data ul li {
+	float: left;
+	padding: 0 5px 0 0;
+}
+
+.data .time {
+	color: #777;
+	font-size: 54px;
+	font-weight: bold;
+}
+
+.data .avatar {
+	padding: 0 10px 0 0;
+}
+
+.data .title p {
+	color: #666;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 0 0 5px 0;
+}
+
+.data .title p.artist {
+	font-size: 20px;
+	font-weight: normal;	
+}
+
+/*** end of data ***/
+
+/*** bar start ***/
+
+.seekSlider, .seekSlider.ui-slider-horizontal {
+	-moz-border-radius: 3px 3px 3px 3px;
+	border: 1px solid #aaa;
+	height: 11px;
+}
+
+/*** end of bar ***/
+
+/*** buttons start ***/
+
+.buttons {
+	padding: 15px 0 15px 5px;
+}
+
+.buttons ul li {
+	float:left;
+	padding: 0 10px 0 0;
+}
+
+.buttons ul li + li + li + li + li + li {
+	padding: 2px 10px 0 30px;
+}
+
+.buttons .controll img {
+	height: 20px;
+	width: 20px;
+}
+
+.buttons .controll.open img {
+	height:	15px;
+	width: 22px;
+}
+
+/*** end of buttons ***/

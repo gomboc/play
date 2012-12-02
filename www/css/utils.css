@@ -1,0 +1,32 @@
+
+/***** utils *****/
+
+* {
+	border: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #666;
+	font-size: 14px;
+}
+
+.brclear {
+	clear: both;
+	font-size: 1px;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.hide, .hidden {
+	display: none;
+}
+
+/***** end of utils *****/

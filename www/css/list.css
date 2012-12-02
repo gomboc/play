@@ -1,0 +1,24 @@
+
+.list ul li a {
+	border-bottom: 1px solid transparent;
+    color: #666666;
+    display: block;
+    margin: 0 0 1px;
+    overflow: hidden;
+    padding: 3px 2px 3px 3px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list ul li a:hover {
+	border-color: #ddd;
+	background-color: #ededed; 
+	color: blue;
+}
+
+.list ul li a.active, .list ul li a.selected {
+	border-color: #aaa;
+	background-color: #bbb; 
+	color: #fff;
+}

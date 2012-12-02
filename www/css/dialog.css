@@ -1,0 +1,97 @@
+
+#dialog {
+	background-color: #fff;
+    border: 1px solid #999;
+    display: none;
+    height: 456px;
+    left: 50px;
+    padding: 0 10px;
+    position: absolute;
+    top: 50px;
+    width: 700px;
+    z-index: 100;
+}
+
+#dialog .inner {
+	position: relative;
+}
+
+#dialog .close {
+	background: url( "/img/close.png" ) no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 16px;
+	position: absolute;
+	right: 5px;
+	top: 15px;
+	width: 16px;
+}
+
+#dialog h2 {
+	border-bottom: 1px solid #ccc;
+	cursor: move;
+    font-size: 20px;
+    padding: 15px 0 10px 10px;
+}
+
+#dialog .breadcrumbs {
+	font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    padding: 0 0 7px;
+}
+
+#dialog .navigation {
+	float: left;
+	font-size: 16px;
+	padding: 10px 0 0;
+	width: 90px;
+}
+
+#dialog .content {
+	border-left: 1px solid #ccc;
+    float: left;
+    font-size: 14px;
+    height: 324px;
+    margin: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 0 0 10px;
+    width: 579px;
+}
+
+#dialog .contentWrapper {
+	height: 301px;
+    margin: 0 0 0 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 574px;
+}
+
+#dialog .content ul {
+	float: left;
+}
+
+#dialog .content ul li {
+	width: 200px;
+}
+
+#dialog .buttons {
+	border-top: 1px solid #ccc;
+	padding: 15px 10px 0 0;
+}
+
+#dialog .buttons ul li {
+    float: right;
+    padding: 0 0 0 10px;
+}
+
+#dialog .youtubeElement button {
+    display: inline;
+}
+
+#dialog .youtubeElement .searchResults {
+    height: 293px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
